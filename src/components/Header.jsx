@@ -6,8 +6,10 @@ import { LogOut, LogIn } from 'react-feather'
 const Header = () => {
     const {user, handleLogout} = useAuth()
   return (
+    
     <div id="header--wrapper">
-        {user ? (
+        Chattify : <br></br>
+        { user ? (
             <>
                 Welcome {user.name}
                 <LogOut className="header--link" onClick={handleLogout}/>
